@@ -22,7 +22,7 @@ function Partners({ partners }: Props) {
       <div className="flex flex-wrap w-full mt-6 md:mt-12 lg:mt-20">
         {partners[0].image.map((image) => {
           return (
-            <div className="w-[33.33%] h-24 md:h-48 relative lg:h-[20rem]">
+            <div className="w-[33.33%] h-24 md:h-48 relative lg:h-[20rem] border-gray-500 border-[1px]">
               <Image
                 className="object-cover"
                 src={urlFor(image).url()}
