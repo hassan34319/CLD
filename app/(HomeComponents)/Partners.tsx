@@ -10,7 +10,6 @@ type Props = {
 };
 
 function Partners({ partners }: Props) {
-  console.log(partners);
   return (
     <section className="flex flex-col items-center mt-6 md:mt-12 lg:mt-20 mb-6 md:mb-12 lg:mb-20">
       <div

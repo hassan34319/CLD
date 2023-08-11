@@ -9,6 +9,11 @@ import gallery from "./sanity/schemas/gallery";
 import homeBanner from "./sanity/schemas/homeBanner";
 import partner from "./sanity/schemas/partner";
 import socialPost from "./sanity/schemas/socialPost";
+import work from "./sanity/schemas/work";
+import trainingProgram from "./sanity/schemas/trainingProgram";
+import trainer from "./sanity/schemas/trainer";
+import companyBanner from "./sanity/schemas/companyBanner";
+import philosophyBanner from "./sanity/schemas/philosophyBanner";
 
 export default defineConfig({
   name: "default",
@@ -17,6 +22,6 @@ export default defineConfig({
   dataset,
   plugins: [deskTool()],
   schema: {
-    types: [activity,gallery,homeBanner,partner,socialPost],
+    types: [activity,gallery,homeBanner,partner,socialPost,work,trainingProgram,trainer,companyBanner,philosophyBanner],
   },
 });

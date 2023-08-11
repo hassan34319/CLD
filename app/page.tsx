@@ -5,6 +5,7 @@ import Events from "./(HomeComponents)/Events";
 import Explore from "./(HomeComponents)/Explore";
 import HeroSection from "./(HomeComponents)/HeroSection";
 import Partners from "./(HomeComponents)/Partners";
+import Footer from "./(UIComponents)/Footer";
 import Header from "./(UIComponents)/Header";
 import { client } from "./utils/client";
 import { urlFor } from "./utils/UrlImage";
@@ -43,11 +44,12 @@ export default async function Home() {
         <Image src={urlFor(banners[0].banner).url()} alt="banner" fill className="object-cover" />
       </div>
       {/* About Us Intro */}
-      <AboutUs />
+      <AboutUs home={true} />
       <HeroSection />
       <Events activities={activities} gallery={gallery}/>
       <Partners partners={partners} />
       <Explore socialPosts={socialPosts} />
+      <Footer/>
     </main>
   );
 }

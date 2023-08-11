@@ -35,8 +35,8 @@ function HeroSection({}: Props) {
               CORPORATE TRAININGS
             </h1>
             <p className="text-xxss md:text-xs text-start">
-              Lorem ipsum dolor sit amet consectetur. Et orci sapien ultrices
-              sit turpis velit.
+              World class leadership and management development programs for
+              C-suite, mid-tier and front-line management.
             </p>
           </div>
         </div>
@@ -64,8 +64,8 @@ function HeroSection({}: Props) {
               GOVERMENT SECTOR TRAINING
             </h1>
             <p className="text-xxss md:text-xs text-start">
-              Lorem ipsum dolor sit amet consectetur. Et orci sapien ultrices
-              sit turpis velit.
+              Transforming public sector institutions through customized
+              training programs.
             </p>
           </div>
         </div>
@@ -107,8 +107,8 @@ function HeroSection({}: Props) {
               YOUTH TRAINING
             </h1>
             <p className="text-xxss md:text-xs text-start">
-              Lorem ipsum dolor sit amet consectetur. Et orci sapien ultrices
-              sit turpis velit.
+              We have a passion and unmatchable experience to develop youth
+              leaders across the globe.
             </p>
           </div>
         </div>
@@ -136,8 +136,8 @@ function HeroSection({}: Props) {
               ACADEMIA TRAINING
             </h1>
             <p className="text-xxss md:text-xs text-start">
-              Lorem ipsum dolor sit amet consectetur. Et orci sapien ultrices
-              sit turpis velit.
+              Student and teacher development programs are customized in
+              partnership with leading universities and schools.
             </p>
           </div>
         </div>

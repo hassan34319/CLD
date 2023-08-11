@@ -23,7 +23,6 @@ const Events = ({ activities, gallery }: Props) => {
     return activities.filter((activity) => activity.category === "events");
   }
   const events = getEventActivities(activities);
-  console.log(activities);
   function sortByCreatedAtDesc(activities: Activity[]): Activity[] {
     return activities.slice().sort((a, b) => {
       const dateA = new Date(a._createdAt);

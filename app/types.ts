@@ -41,3 +41,16 @@ export interface SocialPost {
   };
   link: string;
 }
+
+export interface Trainer {
+  _id: string;
+  name: string;
+  image: {
+    asset: {
+      url: string;
+    };
+  };
+  title: string;
+  para1: string;
+  para2: string;
+}
