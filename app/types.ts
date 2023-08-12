@@ -54,3 +54,34 @@ export interface Trainer {
   para1: string;
   para2: string;
 }
+
+export interface Work {
+  _id: string;
+  slug: {
+    _type: 'slug';
+    current: string;
+  };
+  title: string;
+  image: {
+    asset: {
+      url: string;
+    };
+  };
+  learningSolutionText: string;
+  learningSolutions: {
+    name: string;
+    description: string;
+  }[];
+  trainingPrograms: {
+    name: string;
+    trainingProgram: {
+      _ref: string;
+      _type: 'reference';
+    };
+    slug: {
+      _type: 'slug';
+      current: string;
+    };
+  }[];
+}
+

@@ -14,6 +14,7 @@ import trainingProgram from "./sanity/schemas/trainingProgram";
 import trainer from "./sanity/schemas/trainer";
 import companyBanner from "./sanity/schemas/companyBanner";
 import philosophyBanner from "./sanity/schemas/philosophyBanner";
+import subTraining from "./sanity/schemas/subTraining";
 
 export default defineConfig({
   name: "default",
@@ -22,6 +23,6 @@ export default defineConfig({
   dataset,
   plugins: [deskTool()],
   schema: {
-    types: [activity,gallery,homeBanner,partner,socialPost,work,trainingProgram,trainer,companyBanner,philosophyBanner],
+    types: [activity,gallery,homeBanner,partner,socialPost,work,trainingProgram,trainer,companyBanner,philosophyBanner,subTraining],
   },
 });

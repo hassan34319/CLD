@@ -14,7 +14,7 @@ function Trainer({ trainers }: Props) {
       <div className="flex flex-wrap justify-center mt-10 md:mt-18 lg:mt-24 mx-3 gap-y-10 space-x-4 md:space-x-8 lg:space-x-12">
         {trainers.map((trainer) => {
           return (
-            <div className="w-[28%]  flex flex-col">
+            <div key={trainer._id} className="w-[28%]  flex flex-col">
               <div className="mx-auto w-[70%] h-16 md:h-32 lg:h-64 relative mb-[-4vh] lg:mb-[-6vh] ">
                 <Image
                   className="object-cover"

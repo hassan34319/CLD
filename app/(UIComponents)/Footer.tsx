@@ -70,14 +70,6 @@ function Footer({}: Props) {
                 7878, Ibn Hazim Street, Al Faisal District, Saudia Arabia
               </p>
             </div>
-            <div className="flex flex-row justify-start space-x-1 items-center md:space-x-2 ">
-              <Globe />
-              <p className="text-[#F5F5F5] text-xxss md:text-xs font-bold text-center lg:text-base">
-                <Link href="http://www.cldtraining.biz/">
-                  http://www.cldtraining.biz/
-                </Link>
-              </p>
-            </div>
           </div>
         </div>
         <div className="flex flex-col items-start justify-center w-[26.7%] ">
