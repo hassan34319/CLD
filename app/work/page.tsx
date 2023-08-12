@@ -10,7 +10,7 @@ import { urlFor } from "../utils/UrlImage";
 
 type Props = {};
 
-
+export const revalidate = 10
 async function WorkPage({}: Props) {
   const works = await client.fetch(`
     *[_type == "work"] {
