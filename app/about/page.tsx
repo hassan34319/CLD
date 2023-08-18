@@ -8,6 +8,7 @@ import { client } from "../utils/client";
 import { cy } from "../utils/Cy";
 import { urlFor } from "../utils/UrlImage";
 
+export const revalidate = 60
 type Props = {};
 
 async function AboutPage({}: Props) {

@@ -10,6 +10,8 @@ import Header from "./(UIComponents)/Header";
 import { client } from "./utils/client";
 import { urlFor } from "./utils/UrlImage";
 
+export const revalidate = 60
+
 export default async function Home() {
   const partners = await client.fetch(`
     *[_type == "partners"] {

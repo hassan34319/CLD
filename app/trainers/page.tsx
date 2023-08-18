@@ -6,6 +6,7 @@ import { cy } from "../utils/Cy";
 import Trainer from "./(TrainersComponents)/Trainer";
 
 type Props = {};
+export const revalidate = 60
 
 async function TrainerPage({}: Props) {
   const trainers = await client.fetch(`

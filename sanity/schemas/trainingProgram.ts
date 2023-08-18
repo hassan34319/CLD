@@ -27,21 +27,6 @@ export default {
           fields: [
             { name: "name", type: "string", title: "Name" },
             { name: "description", type: "text", title: "Description" },
-            {
-              name: "slug",
-              type: "slug",
-              title: "Slug",
-              options: {
-                source: "name", // Generates the slug based on the "title" field
-                maxLength: 200, // Maximum length of the generated slug
-              },
-            },
-            {
-              name: "subTraining",
-              type: "reference",
-              title: "Sub Training",
-              to: [{ type: "subTraining" }],
-            },
           ],
         },
       ],

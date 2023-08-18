@@ -1,6 +1,7 @@
+
 export interface Activity {
   _id: string;
-  _createdAt : Date;
+  _createdAt: Date;
   title: string;
   date: number;
   month: string;
@@ -11,6 +12,10 @@ export interface Activity {
     asset: {
       url: string;
     };
+  };
+  slug: {
+    _type: "slug";
+    current: string;
   };
 }
 
@@ -58,7 +63,7 @@ export interface Trainer {
 export interface Work {
   _id: string;
   slug: {
-    _type: 'slug';
+    _type: "slug";
     current: string;
   };
   title: string;
@@ -76,12 +81,25 @@ export interface Work {
     name: string;
     trainingProgram: {
       _ref: string;
-      _type: 'reference';
+      _type: "reference";
     };
     slug: {
-      _type: 'slug';
+      _type: "slug";
       current: string;
     };
   }[];
 }
 
+export interface BlueBox {
+  name: string;
+  description: string;
+}
+
+export interface TrainingProgram {
+  title: string;
+  slug: {
+    _type: "slug";
+    current: string;
+  };
+  blueBoxes: BlueBox[];
+}

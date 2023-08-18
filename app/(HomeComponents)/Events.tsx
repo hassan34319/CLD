@@ -46,32 +46,32 @@ const Events = ({ activities, gallery }: Props) => {
           <button
             onClick={() => setSelectedTab("All")}
             className={`font-semibold  ${
-                selectedTab === "All" ? "text-coral" : "text-white"
-              }`}
+              selectedTab === "All" ? "text-coral" : "text-white"
+            }`}
           >
             All
           </button>
           <button
             onClick={() => setSelectedTab("Latest")}
             className={`font-semibold  ${
-                selectedTab === "Latest" ? "text-coral" : "text-white"
-              }`}
+              selectedTab === "Latest" ? "text-coral" : "text-white"
+            }`}
           >
             Latest
           </button>
           <button
             onClick={() => setSelectedTab("Event")}
             className={`font-semibold  ${
-                selectedTab === "Event" ? "text-coral" : "text-white"
-              }`}
+              selectedTab === "Event" ? "text-coral" : "text-white"
+            }`}
           >
             Events
           </button>
           <button
             onClick={() => setSelectedTab("Blog")}
             className={`font-semibold  ${
-                selectedTab === "Blog" ? "text-coral" : "text-white"
-              }`}
+              selectedTab === "Blog" ? "text-coral" : "text-white"
+            }`}
           >
             Blog
           </button>
@@ -107,7 +107,9 @@ const Events = ({ activities, gallery }: Props) => {
               <p className="text-xxss md:text-sm lg:text-base text-white mt-1">
                 {activities[0].shortText}
                 {"                                                          "}
-                <span className="text-coral opacity-80">... read more</span>
+                <Link className="text-coral" href={`/activities/${activities[0].slug.current}`}>
+                  ... read more
+                </Link>
               </p>
             </div>
             {/* Activity image */}
@@ -142,7 +144,9 @@ const Events = ({ activities, gallery }: Props) => {
               <p className="text-xxss md:text-sm lg:text-base text-white mt-1">
                 {latestActivities[0].shortText}
                 {"                                                          "}
-                <span className="text-coral opacity-80">... read more</span>
+                <Link className="text-coral " href={`/activities/${latestActivities[0].slug.current}`}>
+                  ... read more
+                </Link>
               </p>
             </div>
             {/* Activity image */}
@@ -177,7 +181,9 @@ const Events = ({ activities, gallery }: Props) => {
               <p className="text-xxss md:text-sm lg:text-base text-white mt-1">
                 {events[0].shortText}
                 {"                                                          "}
-                <span className="text-coral opacity-80">... read more</span>
+                <Link className="text-coral" href={`/activities/${events[0].slug.current}`}>
+                  ... read more
+                </Link>
               </p>
             </div>
             {/* Activity image */}
@@ -213,7 +219,9 @@ const Events = ({ activities, gallery }: Props) => {
               <p className="text-xxss md:text-sm lg:text-base text-white mt-1">
                 {blogs[0].shortText}
                 {"                                                          "}
-                <span className="text-coral opacity-80">... read more</span>
+                <Link className="text-coral" href={`/activities/${blogs[0].slug.current}`}>
+                  ... read more
+                </Link>
               </p>
             </div>
             {/* Activity image */}

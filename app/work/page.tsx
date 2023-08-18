@@ -32,7 +32,7 @@ async function WorkPage({}: Props) {
               >
                 {work.title}
               </div>
-              <Link href={`/work/${work._id}`}>
+              <Link href={`/work/${work.slug.current}`}>
                 <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[34rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
                   <Image
                     src={urlFor(work.image).url()}

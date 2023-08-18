@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Overpass } from 'next/font/google'
 
-const overpass = Overpass({ subsets: ['latin'] })
+const overpass = Overpass({ subsets: ['latin', "cyrillic" , "cyrillic-ext" , "latin-ext" , "vietnamese"] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
