@@ -46,13 +46,13 @@ async function AboutPage({}: Props) {
         </div>
       </Link>
       <div className="w-full flex flex-row justify-between items-center mt-4 md:mt-8 lg:mt-16">
-        <div className="bg-coral h-1 rounded-r-2xl w-[30%] md:h-2 lg:h-4"></div>
+        <div className="bg-coral h-1 rounded-r-2xl w-[20%] md:h-2 lg:h-4"></div>
         <div
           className={`${cy.className} text-tiffany text-lg  md:text-4xl lg:text-6xl`}
         >
           OUR COMPANY
         </div>
-        <div className="bg-coral h-1 rounded-l-xl w-[30%] md:h-2 lg:h-4"></div>
+        <div className="bg-coral h-1 rounded-l-xl w-[20%] md:h-2 lg:h-4"></div>
       </div>
       <div
         className={`${bebas.className} mt-4 mb-10 text-sugar px-6 text-center md:text-2xl md:px-16 md:mt-6 lg:text-4xl  lg:px-28 lg:mt-8`}
@@ -70,6 +70,16 @@ async function AboutPage({}: Props) {
         <br></br>
         Arabia VAT No. : 311323643800003 Bank Account: Alinma Bank IBAN:
         SA7705000068204171617000 Branch: Almubaraz, Aldhahran
+        <br></br>
+        <br></br>
+        <div className="mt-4 md:mt-8 lg:mt-16 w-[50%] flex flex-row justify-between text-coral underline text-xs md:text-sm lg:text-base mx-auto">
+          <a href="/Vat.pdf" download>
+            DOWNLOAD VAT CERIFICATE
+          </a>
+          <a href="/Company.pdf" download>
+            DOWNLOAD COMPANY REGISTRATION CERTIFICATE
+          </a>
+        </div>
       </div>
       <Footer />
     </main>
