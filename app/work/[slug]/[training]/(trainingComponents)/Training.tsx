@@ -125,7 +125,7 @@ function Training({ subTrainings, slug }: Props) {
         {/* Submit button */}
         <div
           onClick={handleFormSubmit}
-          className={`mx-auto w-[50%] md:w-[40%] h-8 md:h-14 lg:h-18 mt-4 md:mt-8 lg:mt-12 bg-coral flex items-center justify-center ${cy.className} text-xs md:text-xl lg:text-2xl text-white`}
+          className={`cursor-pointer mx-auto w-[50%] md:w-[40%] h-8 md:h-14 lg:h-18 mt-4 md:mt-8 lg:mt-12 bg-coral flex items-center justify-center ${cy.className} text-xs md:text-xl lg:text-2xl text-white`}
         >
           REGISTER NOW
         </div>

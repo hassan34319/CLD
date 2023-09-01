@@ -32,10 +32,10 @@ function Header({}: Props) {
         </Link>
       </div>
       {/* Button */}
-      <button className={`flex flex-row w-[20%] items-center justify-center bg-sugar rounded-xl px-[1%] py-[1%] md:py-[1%] text-xxss md:text-xs lg:text-base lg:rounded-[60px] text-black ${cy.className} text-center md:rounded-3xl md:py-[1.5%]  `}>
-        <span className="my-auto">REGISTER NOW</span>
+      <Link href="/register" className={`flex flex-row w-[20%] items-center justify-center bg-sugar rounded-xl px-[1%] py-[1%] md:py-[1%] text-xxss md:text-xs lg:text-base lg:rounded-[60px] text-black ${cy.className} text-center md:rounded-3xl md:py-[1.5%]  `}>
+        <span className="my-auto cursor-pointer">REGISTER NOW</span>
         <ChevronDownIcon className="text-black h-2 w-2 md:h-4 md:w-4 lg:h-6 lg:w-6 md:ml-[2px] ml-[1px] my-auto"/>
-      </button>
+      </Link>
     </div>
   );
 }

@@ -15,7 +15,7 @@ function Explore({socialPosts}: Props) {
       <div
         className={`${cy.className} text-tiffany text-lg  md:text-4xl lg:text-6xl`}
       >
-        EXPLORE MORE
+        EXPLORE
       </div>
       {/* POSTS */}
        <div className="flex flex-wrap w-full mt-6 md:mt-12 lg:mt-20">

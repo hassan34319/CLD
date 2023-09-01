@@ -38,7 +38,7 @@ const Activities = ({ activities, gallery }: Props) => {
       <h1
         className={`${cy.className} text-tiffany text-lg  md:text-4xl lg:text-6xl pl-4 py-4 md:pl-8 md:py-8 xl:pl-14 xl:py-14`}
       >
-        ACTIVITIES:
+        HAPPENINGS 
       </h1>
       {/* Links */}
       <div className="flex flex-row justify-end mx-auto w-[90%] space-x-2 md:space-x-4 lg:space-x-8 text-xxs md:text-base lg:text-xl">

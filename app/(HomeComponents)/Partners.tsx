@@ -15,13 +15,13 @@ function Partners({ partners }: Props) {
       <div
         className={`${cy.className} text-tiffany text-lg  md:text-4xl lg:text-6xl`}
       >
-        CORPORATE PARTNERS
+        OUR POWER NETWORK
       </div>
       {/* LOGOS */}
-      <div className="flex flex-wrap w-full mt-6 md:mt-12 lg:mt-20">
+      <div className="flex flex-wrap justify-center w-full mt-6 md:mt-12 lg:mt-20">
         {partners[0].image.map((image) => {
           return (
-            <div className="w-[33.33%] h-24 md:h-48 relative lg:h-[20rem] border-gray-500 border-[1px]">
+            <div className="w-[20%] h-16 md:h-32 relative lg:h-[14rem] border-gray-500 border-[1px]">
               <Image
                 className="object-cover"
                 src={urlFor(image).url()}

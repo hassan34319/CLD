@@ -67,7 +67,7 @@ function Footer({}: Props) {
             <div className="flex flex-row justify-start space-x-1 items-center md:space-x-2 ">
               <Location />
               <p className="text-[#F5F5F5] text-xxss md:text-xs font-bold text-start lg:text-base flex items-center">
-                7878, Ibn Hazim Street, Al Faisal District, Saudia Arabia
+                4th Floor, Hamad Tower, King Fahad Road, Al Olaya, Riyadh 12212, Kingdom of Saudi Arabia
               </p>
             </div>
           </div>

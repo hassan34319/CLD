@@ -1,4 +1,3 @@
-
 export interface Activity {
   _id: string;
   _createdAt: Date;
@@ -56,8 +55,12 @@ export interface Trainer {
     };
   };
   title: string;
-  para1: string;
-  para2: string;
+  shortText: string;
+  longText: { children: { text: string }[] }[];
+  slug: {
+    _type: "slug";
+    current: string;
+  };
 }
 
 export interface Work {

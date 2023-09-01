@@ -20,9 +20,9 @@ export default {
         title: 'Phone',
       },
       {
-        name: 'country',
+        name: 'designation',
         type: 'string',
-        title: 'Country',
+        title: 'Designation',
       },
       {
         name: 'company',

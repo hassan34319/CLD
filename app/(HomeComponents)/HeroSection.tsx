@@ -32,7 +32,7 @@ function HeroSection({}: Props) {
             <h1
               className={`text-start text-xs md:text-2xl lg:text-4xl ${bebas.className} flex flex-row`}
             >
-              CORPORATE TRAININGS
+              CORPORATE LEADERSHIP SOLUTIONS
             </h1>
             <p className="text-xxss md:text-xs text-start">
               World class leadership and management development programs for
@@ -61,7 +61,7 @@ function HeroSection({}: Props) {
             <h1
               className={`text-start text-xs md:text-2xl lg:text-4xl ${bebas.className} flex flex-row`}
             >
-              GOVERMENT SECTOR TRAINING
+              GOVERNMENT LEARNING SOLUTIONS
             </h1>
             <p className="text-xxss md:text-xs text-start">
               Transforming public sector institutions through customized
@@ -104,7 +104,7 @@ function HeroSection({}: Props) {
             <h1
               className={`text-start text-xs md:text-2xl lg:text-4xl ${bebas.className} flex flex-row`}
             >
-              YOUTH TRAINING
+              YOUTH LEADERSHIP DEVELOPMENT
             </h1>
             <p className="text-xxss md:text-xs text-start">
               We have a passion and unmatchable experience to develop youth
@@ -133,7 +133,7 @@ function HeroSection({}: Props) {
             <h1
               className={`text-start text-xs md:text-2xl lg:text-4xl ${bebas.className} flex flex-row`}
             >
-              ACADEMIA TRAINING
+              ACADEMIA LEARNING SOLUTIONS
             </h1>
             <p className="text-xxss md:text-xs text-start">
               Student and teacher development programs are customized in
