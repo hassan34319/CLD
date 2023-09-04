@@ -41,7 +41,7 @@ async function WorkPage({}: Props) {
                     className="object-fill z-0 hover:opacity-30"
                   />
                   <div
-                    className={` bg-sugar invisible group-hover:visible text-center text-black text-xl z-50  relative  bg-opacity-100 w-[30%] mx-auto my-auto flex items-center justify-center h-12 rounded-xl  ${cy.className}`}
+                    className={`  hidden md:flex bg-sugar invisible group-hover:visible text-center text-black text-xl z-50  relative  bg-opacity-100 w-[30%] mx-auto my-auto  items-center justify-center h-12 rounded-xl  ${cy.className}`}
                   >
                     LEARN MORE
                   </div>

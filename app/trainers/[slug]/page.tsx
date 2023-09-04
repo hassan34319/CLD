@@ -10,7 +10,6 @@ import BlockContent from "@sanity/block-content-to-react";
 
 type Props = {};
 
-export const revalidate = 60;
 async function page({ params }: { params: { slug: string } }) {
   const query = `*[_type == "trainer" && slug.current == $slug]`;
   const { slug } = params;

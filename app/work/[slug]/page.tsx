@@ -9,12 +9,12 @@ import Link from "next/link";
 import React from "react";
 
 type Props = {};
-export const revalidate = 60;
 async function TrainingPage({ params }: { params: { slug: string } }) {
-  const query = `*[_type == "work" && slug.current == $slug]`;
   const { slug } = params;
   console.log(slug);
-  const work: Work[] = await client.fetch(query, { slug });
+  const query = `*[_type == "work" && slug.current == "${slug}"]`;
+  const work: Work[] = await client.fetch(query);
+  console.log(work)
   return (
     <main className="w-full h-max">
       <Header />
