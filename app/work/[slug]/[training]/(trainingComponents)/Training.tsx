@@ -13,7 +13,7 @@ function Training({ subTrainings, slug }: Props) {
   const [selectedBox, setSelectedBox] = useState("");
   const [formData, setFormData] = useState({
     name: "",
-    country: "",
+    designation: "",
     mobileNumber: "",
     emailAddress: "",
     company : ""
@@ -37,7 +37,7 @@ function Training({ subTrainings, slug }: Props) {
             name : formData.name,
             email : formData.emailAddress,
             phone : formData.emailAddress,
-            country : formData.country,
+            designation : formData.designation,
             company : formData.company,
             selectedTraining : slug,
             selectedSubTraining : selectedBox,
@@ -49,7 +49,7 @@ function Training({ subTrainings, slug }: Props) {
       // Optionally, you can reset the form data
       setFormData({
         name: "",
-        country: "",
+        designation: "",
         mobileNumber: "",
         emailAddress: "",
         company : ""
@@ -87,19 +87,10 @@ function Training({ subTrainings, slug }: Props) {
         </div>
         <div className="h-6 md:h-12 lg:h-16 w-full mt-4 md:mt-8 lg:mt-12 bg-[#3D3D3D]">
           <input
-            name="company"
-            value={formData.company}
+            name="designation"
+            value={formData.designation}
             onChange={handleInputChange}
-            placeholder="Company Name"
-            className="my-auto h-full w-full outline-none bg-[#3D3D3D] text-xs md:text-lg lg:text-xl pl-[2%]"
-          />
-        </div>
-        <div className="h-6 md:h-12 lg:h-16 w-full mt-4 md:mt-8 lg:mt-12 bg-[#3D3D3D]">
-          <input
-            name="country"
-            value={formData.country}
-            onChange={handleInputChange}
-            placeholder="Country"
+            placeholder="Designation"
             className="my-auto h-full w-full outline-none bg-[#3D3D3D] text-xs md:text-lg lg:text-xl pl-[2%]"
           />
         </div>
