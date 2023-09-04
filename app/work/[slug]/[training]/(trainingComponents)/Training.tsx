@@ -147,7 +147,7 @@ function Training({ subTrainings, slug }: Props) {
             >
               {sol.name}
             </div>
-            <div className="bg-[#f5f5f5] h-[4rem] md:h-[8rem] lg:h-[14rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex items-center justify-center text-start px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
+            <div className="bg-[#f5f5f5] h-[5rem] md:h-[10rem] lg:h-[16rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex items-center justify-center text-start px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
               {sol.description}
             </div>
           </div>
