@@ -35,7 +35,7 @@ function BrandPage({}: Props) {
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative mt-8 md:mt-16 lg:mt-24">
         <Image src="/10.jpg" alt="banner" fill className="object-contain" />
       </div>
-      <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative mt-8 md:mt-16 lg:mt-24">
+      <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative mt-8 md:mt-16 lg:mt-24 mb-4 md:mb-8 lg:mb-16">
         <Image src="/11.jpg" alt="banner" fill className="object-contain" />
       </div>
       <Footer />
