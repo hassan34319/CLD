@@ -10,7 +10,7 @@ import { urlFor } from "../utils/UrlImage";
 
 type Props = {};
 
-export const revalidate = 10
+export const revalidate = 10;
 async function WorkPage({}: Props) {
   const works = await client.fetch(`
     *[_type == "work"] {
@@ -24,21 +24,25 @@ async function WorkPage({}: Props) {
     <main className="w-full h-max">
       <Header />
       <div className="min-h-[70vh]">
+        <div className="w-full flex flex-row justify-between items-center mb-4 md:mt-8 lg:mb-16">
+          <div className="bg-coral h-[0.125rem] rounded-r-2xl w-[30%] md:h-1 lg:h-2"></div>
+          <div
+            className={`${cy.className} text-tiffany text-lg  md:text-4xl lg:text-6xl`}
+          >
+            OUR WORK
+          </div>
+          <div className="bg-coral h-[0.125rem] rounded-l-2xl w-[30%] md:h-1 lg:h-2 "></div>
+        </div>
         {works.map((work: Work) => {
           return (
             <div key={work._id} className="w-full mb-6 md:mb-12 lg:mb-24 ">
-              <div
-                className={`${cy.className} text-coral text-sm  md:text-2xl lg:text-3xl mt-4 md:mt-8 lg:mt-16 flex justify-center`}
-              >
-                {work.title}
-              </div>
               <Link href={`/work/${work.slug.current}`}>
-                <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[34rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
+                <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
                   <Image
                     src={urlFor(work.image).url()}
                     alt="banner"
                     fill
-                    className="object-fill z-0 hover:opacity-30"
+                    className="object-contain z-0 hover:opacity-30"
                   />
                   <div
                     className={`  hidden md:flex bg-sugar invisible group-hover:visible text-center text-black text-xl z-50  relative  bg-opacity-100 w-[30%] mx-auto my-auto  items-center justify-center h-12 rounded-xl  ${cy.className}`}

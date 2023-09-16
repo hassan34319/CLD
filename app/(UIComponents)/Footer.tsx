@@ -76,7 +76,7 @@ function Footer({}: Props) {
           <div
             className={`${cy.className} text-tiffany text-xxs  md:text-xl lg:text-3xl mb-1 md:mb-2 lg:mb-4`}
           >
-            START A CONVERSATION:
+            START A CONVERSATION
           </div>
           {/* Text Bar*/}
           <div className="w-full text-white flex flex-col space-y-0">

@@ -10,8 +10,8 @@ import Header from "./(UIComponents)/Header";
 import { client } from "./utils/client";
 import { urlFor } from "./utils/UrlImage";
 
-export const revalidate = 60
 
+export const revalidate = 60
 export default async function Home() {
   const partners = await client.fetch(`
     *[_type == "partners"] {
@@ -42,8 +42,8 @@ export default async function Home() {
     <main className="w-full h-max">
       <Header />
       {/* Banner */}
-      <div className="w-full h-48 md:h-[24rem] lg:h-[32rem] relative">
-        <Image src={urlFor(banners[0].banner).url()} alt="banner" fill className="object-cover" />
+      <div className="w-[90%] md:w-[90%] mx-auto h-48 md:h-[24rem] lg:h-[40rem] relative  border-l-2 border-r-2 md:border-r-4 md:border-l-4 border-tiffany">
+        <Image src={urlFor(banners[0].banner).url()} alt="banner" fill className="object-contain" />
       </div>
       {/* About Us Intro */}
       <AboutUs home={true} />

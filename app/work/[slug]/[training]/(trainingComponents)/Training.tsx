@@ -16,7 +16,7 @@ function Training({ subTrainings, slug }: Props) {
     designation: "",
     mobileNumber: "",
     emailAddress: "",
-    company : ""
+    company: "",
   });
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -28,23 +28,23 @@ function Training({ subTrainings, slug }: Props) {
   };
 
   const handleFormSubmit = async () => {
-    if(!formData) {
-        return
+    if (!formData) {
+      return;
     }
     try {
-        const result = await client.create({
-            _type: 'registrationForm', // Replace with your schema name
-            name : formData.name,
-            email : formData.emailAddress,
-            phone : formData.emailAddress,
-            designation : formData.designation,
-            company : formData.company,
-            selectedTraining : slug,
-            selectedSubTraining : selectedBox,
-          });
-       console.log("SUBMITTED FORM")
+      const result = await client.create({
+        _type: "registrationForm", // Replace with your schema name
+        name: formData.name,
+        email: formData.emailAddress,
+        phone: formData.emailAddress,
+        designation: formData.designation,
+        company: formData.company,
+        selectedTraining: slug,
+        selectedSubTraining: selectedBox,
+      });
+      console.log("SUBMITTED FORM");
       // Handle success or show a message to the user
-    //   console.log("Form data submitted successfully:", response.data);
+      //   console.log("Form data submitted successfully:", response.data);
 
       // Optionally, you can reset the form data
       setFormData({
@@ -52,7 +52,7 @@ function Training({ subTrainings, slug }: Props) {
         designation: "",
         mobileNumber: "",
         emailAddress: "",
-        company : ""
+        company: "",
       });
     } catch (error) {
       // Handle error or show an error message to the user
@@ -96,6 +96,15 @@ function Training({ subTrainings, slug }: Props) {
         </div>
         <div className="h-6 md:h-12 lg:h-16 w-full mt-4 md:mt-8 lg:mt-12 bg-[#3D3D3D]">
           <input
+            name="company"
+            value={formData.company}
+            onChange={handleInputChange}
+            placeholder="Company Name"
+            className="my-auto h-full w-full outline-none bg-[#3D3D3D] text-xs md:text-lg lg:text-xl pl-[2%]"
+          />
+        </div>
+        <div className="h-6 md:h-12 lg:h-16 w-full mt-4 md:mt-8 lg:mt-12 bg-[#3D3D3D]">
+          <input
             name="mobileNumber"
             value={formData.mobileNumber}
             onChange={handleInputChange}
@@ -112,13 +121,13 @@ function Training({ subTrainings, slug }: Props) {
             className="my-auto h-full w-full outline-none bg-[#3D3D3D] text-xs md:text-lg lg:text-xl pl-[2%]"
           />
         </div>
-        
+
         {/* Submit button */}
         <div
           onClick={handleFormSubmit}
           className={`cursor-pointer mx-auto w-[50%] md:w-[40%] h-8 md:h-14 lg:h-18 mt-4 md:mt-8 lg:mt-12 bg-coral flex items-center justify-center ${cy.className} text-xs md:text-xl lg:text-2xl text-white`}
         >
-          REGISTER NOW
+          SUBMIT
         </div>
       </div>
     );
