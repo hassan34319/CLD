@@ -102,7 +102,7 @@ const Activities = ({ activities, gallery }: Props) => {
 
       {/* Gallery */}
       {selectedTab === "Gallery" && (
-        <div className="flex flex-wrap justify-center w-[90%] mx-auto mb-4 md:mb-8 lg:mb-16">
+        <div className="flex flex-wrap justify-center w-[90%] mx-auto mb-4 md:mb-8 lg:mb-16 gap-y-4 md:gap-y-8 lg:gap-y-16">
           {gallery[0].images.map((item, index) => (
             <div
               key={index}
