@@ -2,6 +2,7 @@
 import { TrainingProgram } from "@/app/types";
 import { client } from "@/app/utils/client";
 import { cy } from "@/app/utils/Cy";
+import Link from "next/link";
 import React, { useState } from "react";
 
 type Props = {
@@ -134,7 +135,7 @@ function Training({ subTrainings, slug }: Props) {
   }
 
   return (
-    <div className="cursor-pointer w-[95%] flex-wrap flex justify-between mx-auto mt-4 md:mt-8 lg:mt-16 gap-y-4 md:gap-y-8 lg:gap-y-16">
+    <div className={`${subTrainings[0].blueBoxes.length >1 ? "justify-between" : "justify-center" } cursor-pointer w-[95%] flex-wrap flex  mx-auto mt-4 md:mt-8 lg:mt-16 gap-y-4 md:gap-y-8 lg:gap-y-16`}>
       {subTrainings[0].blueBoxes.map((sol, index) => {
         return (
           <div
@@ -147,8 +148,29 @@ function Training({ subTrainings, slug }: Props) {
             >
               {sol.name}
             </div>
-            <div className="bg-[#f5f5f5] h-[5rem] md:h-[10rem] lg:h-[16rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex items-center justify-center text-start px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
+            <div className="bg-[#f5f5f5] h-[7rem] md:h-[14rem] lg:h-[22rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex flex-col items-center justify-center text-start px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
               {sol.description}
+              <button
+                onClick={() => setSelectedBox(sol.name)}
+                className="text-white bg-tiffany hover:opacity-80 text-xxss  focus:ring-4 mt-2 md:mt-4 lg:mt-8 focus:outline-none focus:opacity-70 font-medium rounded-lg md:text-sm px-2 py-1 md:px-5 md:py-2.5 text-center inline-flex items-center dark:bg-tiffany dark:hover:opacity-80 dark:focus:opacity-80"
+              >
+                Register Now
+                <svg
+                  className="md:w-3.5 md:h-3.5 w-2 h-2 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         );

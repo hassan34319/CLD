@@ -100,6 +100,7 @@ export interface BlueBox {
 
 export interface TrainingProgram {
   title: string;
+  description:string;
   slug: {
     _type: "slug";
     current: string;

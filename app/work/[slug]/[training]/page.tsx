@@ -32,10 +32,13 @@ async function SubTrainingPage({
           >
             {subTrainings[0].title}
           </div>
+          {subTrainings[0].description && (
+            <div className="text-xxs md:text-sm lg:text-lg flex justify-center w-[90%] text-white mx-auto mt-4 md:mt-8 lg:mt-16 ">{subTrainings[0].description}</div>
+          )}
           <Training subTrainings={subTrainings} slug={slug} />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </main>
   );
 }
