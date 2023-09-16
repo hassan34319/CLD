@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${overpass.className} bg-black`}>{children}</body>
+      <body className={`${overpass.className} bg-black text-white`}>{children}</body>
     </html>
   )
 }

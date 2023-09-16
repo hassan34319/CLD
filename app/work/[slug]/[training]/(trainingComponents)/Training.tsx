@@ -144,7 +144,7 @@ function Training({ subTrainings, slug }: Props) {
             key={index}
           >
             <div
-              className={`bg-tiffany h-6 md:h-12 lg:h-20 w-[100%] ${cy.className} text-[0.45rem] md:text-sm lg:text-xl text-white font-medium flex items-center justify-center`}
+              className={`bg-tiffany h-6 md:h-12 lg:h-20 w-[100%] ${cy.className} text-xxss md:text-sm lg:text-xl text-white font-medium flex items-center justify-center`}
             >
               {sol.name}
             </div>
