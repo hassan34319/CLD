@@ -21,7 +21,7 @@ async function SubTrainingPage({
     training,
   });
   return (
-    <main className="w-full h-max">
+    <main className="w-full h-max bg-black text-white">
       <Header />
       <div className="min-h-[70vh]">
         <div

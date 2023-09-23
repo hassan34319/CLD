@@ -59,7 +59,7 @@ function Training({}: Props) {
   const router = useRouter()
 
   return (
-        <div className="w-[95%] mx-auto text-white">
+        <div className="w-[95%] mx-auto  bg-black text-white">
           <h2
             className=" cursor-pointer text-white underline  text-xxs md:text-sm lg:text-lg mt-2 md:mt-4 lg:mt-8 "
             onClick={()=>router.back()}

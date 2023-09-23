@@ -144,11 +144,11 @@ function Training({ subTrainings, slug }: Props) {
             key={index}
           >
             <div
-              className={`bg-tiffany h-6 md:h-12 lg:h-20 w-[100%] ${cy.className} text-xxss md:text-sm lg:text-xl text-white font-medium flex items-center justify-center`}
+              className={`bg-tiffany h-8 md:h-12 lg:h-20 w-[100%] ${cy.className} text-xxss md:text-sm lg:text-xl text-white font-medium flex items-center justify-center`}
             >
               {sol.name}
             </div>
-            <div className="bg-[#f5f5f5] h-[7rem] md:h-[14rem] lg:h-[22rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex flex-col items-center justify-center text-start px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
+            <div className="bg-[#f5f5f5] h-[9rem] md:h-[14rem] lg:h-[22rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex flex-col items-center justify-center text-start px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
               {sol.description}
               <button
                 onClick={() => setSelectedBox(sol.name)}

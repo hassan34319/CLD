@@ -21,7 +21,7 @@ async function WorkPage({}: Props) {
   console.log(works[0].trainingPrograms[0]);
   console.log(works[0].slug);
   return (
-    <main className="w-full h-max">
+    <main className="w-full h-max bg-black text-white">
       <Header />
       <div className="min-h-[70vh]">
         <div className="w-full flex flex-row justify-between items-center mb-4 md:mt-8 lg:mb-16">

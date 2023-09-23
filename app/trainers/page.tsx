@@ -16,7 +16,7 @@ async function TrainerPage({}: Props) {
 `);
 console.log(trainers)
   return (
-    <main className="w-full h-max">
+    <main className="w-full h-max bg-black text-white">
       <Header />
       <div className="w-full flex flex-row justify-between items-center mt-3 md:mt-6 lg:mt-8">
         <div className="bg-coral h-1 rounded-r-2xl w-[20%] md:h-2 lg:h-4"></div>

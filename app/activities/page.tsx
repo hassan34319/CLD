@@ -20,7 +20,7 @@ async function page({}: Props) {
   }
 `);
   return (
-    <main className="w-full h-max">
+    <main className="w-full h-max bg-black text-white">
       <Header />
       {/* Trainers */}
       <Activities activities={activities} gallery={gallery} />

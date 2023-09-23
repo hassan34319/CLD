@@ -16,7 +16,7 @@ async function TrainingPage({ params }: { params: { slug: string } }) {
   const work: Work[] = await client.fetch(query);
   console.log(work)
   return (
-    <main className="w-full h-max">
+    <main className="w-full h-max bg-black text-white">
       <Header />
       <div className="min-h-[70vh]">
         <div key={work[0]._id} className="w-full mb-6 md:mb-12 lg:mb-24 ">

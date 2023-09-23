@@ -15,7 +15,7 @@ type Props = {};
 
 async function AboutPage({}: Props) {
   return (
-    <main className="w-full h-max ">
+    <main className="w-full h-max bg-black text-white ">
       <Header />
       <AboutUs />
       {/* COMPANY SECTION */}

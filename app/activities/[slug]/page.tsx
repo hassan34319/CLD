@@ -16,7 +16,7 @@ async function page({ params }: { params: { slug: string } }) {
   console.log(slug);
   const activity: Activity[] = await client.fetch(query, { slug });
   return (
-    <main className="w-full h-max mb-3 md:mb-6 lg:mb-8">
+    <main className="w-full h-max mb-3 md:mb-6 lg:mb-8 bg-black text-white">
       <Header />
       <div className="w-full min-h-[70vh]">
         <div className="w-full flex flex-row justify-between items-center mt-3 md:mt-6 lg:mt-8">
