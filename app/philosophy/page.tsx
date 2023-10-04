@@ -60,14 +60,6 @@ export default function PhilPage({}: Props) {
           className="object-contain"
         />
       </div>
-      <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative  mb-4 md:mb-8 lg:mb-16">
-        <Image
-          src="/phil16.jpg"
-          alt="banner"
-          fill
-          className="object-contain"
-        />
-      </div>
       <Footer/>
     </main>
   );
