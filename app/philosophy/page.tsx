@@ -22,7 +22,7 @@ export default function PhilPage({}: Props) {
 
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative">
         <Image
-          src="/phil1.jpg"
+          src="/phil11.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -30,7 +30,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative ">
         <Image
-          src="/phil2.jpg"
+          src="/phil12.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -38,7 +38,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative ">
         <Image
-          src="/phil3.jpg"
+          src="/phil13.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -46,7 +46,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative">
         <Image
-          src="/phil4.jpg"
+          src="/phil14.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -54,7 +54,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative ">
         <Image
-          src="/phil5.jpg"
+          src="/phil15.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -62,7 +62,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative  mb-4 md:mb-8 lg:mb-16">
         <Image
-          src="/phil6.jpg"
+          src="/phil16.jpg"
           alt="banner"
           fill
           className="object-contain"

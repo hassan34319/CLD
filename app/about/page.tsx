@@ -30,10 +30,10 @@ async function AboutPage({}: Props) {
         <div className="bg-coral h-[0.125rem] rounded-l-2xl w-[15%] md:h-1 lg:h-2 "></div>
       </div>
       <div  className="w-full mb-6 md:mb-12 lg:mb-24 ">
-              <Link href={`/philosophy`}>
+              <Link href={`/brand`}>
                 <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
                   <Image
-                    src="/05.jpg"
+                    src="/5.jpg"
                     alt="banner"
                     fill
                     className="object-contain z-0 hover:opacity-30"
@@ -59,7 +59,7 @@ async function AboutPage({}: Props) {
               <Link href={`/philosophy`}>
                 <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
                   <Image
-                    src="/05.jpg"
+                    src="/phil9.jpg"
                     alt="banner"
                     fill
                     className="object-contain z-0 hover:opacity-30"
