@@ -42,7 +42,7 @@ export default async function Home() {
     <main className="w-full h-max bg-black text-white">
       <Header />
       {/* Banner */}
-      <div className="w-[90%] md:w-[90%] mx-auto h-48 md:h-[24rem] lg:h-[40rem] relative  border-l-2 border-r-2 md:border-r-4 md:border-l-4 border-tiffany">
+      <div className="w-[90%] md:w-[90%] mx-auto h-48 md:h-[24rem] lg:h-[40rem] relative">
         <Image src={urlFor(banners[0].banner).url()} alt="banner" fill className="object-contain" />
       </div>
       {/* About Us Intro */}

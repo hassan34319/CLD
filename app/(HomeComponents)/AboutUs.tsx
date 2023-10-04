@@ -9,7 +9,7 @@ type Props = {
 
 function AboutUs({ home }: Props) {
   return (
-    <section className="w-full mt-[4%] flex flex-col items-center">
+    <section className="w-full mt-[4%] flex flex-col items-center ">
       {/* Heading */}
       <div className="w-full flex flex-row justify-between items-center mb-4 md:mt-8 lg:mb-16">
         <div className="bg-coral h-[0.125rem] rounded-r-2xl w-[30%] md:h-1 lg:h-2"></div>
@@ -35,7 +35,7 @@ function AboutUs({ home }: Props) {
       {home && (
         <Link
           href="/about"
-          className={`${bebas.className} bg-sugar px-2 py-[1px] w-[25%] rounded-xl text-center mt-[0.8rem] text-sm flex items-center justify-center md:w-[20%] md:py-1 md:text-xl md:rounded-3xl lg:w-[16%] lg:text-3xl lg:mt-5`}
+          className={`${bebas.className} bg-sugar text-black px-2 py-[1px] w-[25%] rounded-xl text-center mt-[0.8rem] text-sm flex items-center justify-center md:w-[20%] md:py-1 md:text-xl md:rounded-3xl lg:w-[16%] lg:text-3xl lg:mt-5`}
         >
           Learn More
         </Link>

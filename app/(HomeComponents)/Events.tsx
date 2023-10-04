@@ -260,7 +260,7 @@ const Events = ({ activities, gallery }: Props) => {
         <div
           className={`cursor-pointer bg-white w-1/6 py-[1px] rounded-lg ${bebas.className} mx-auto flex items-center justify-center text-xxs mt-3 md:text-base md:rounded-2xl lg:text-xl lg:mt-5 md:py-1`}
         >
-          <Link href="/activities" className="w-full text-center mx-auto">
+          <Link href="/activities" className="w-full text-center mx-auto text-black">
             SEE MORE
           </Link>
         </div>

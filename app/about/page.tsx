@@ -29,16 +29,23 @@ async function AboutPage({}: Props) {
         </div>
         <div className="bg-coral h-[0.125rem] rounded-l-2xl w-[15%] md:h-1 lg:h-2 "></div>
       </div>
-      <Link href="/brand" className="w-full h-full relative">
-        <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative mt-8 md:mt-16 lg:mt-24">
-          <Image
-            src="/brandMain.jpg"
-            alt="banner"
-            fill
-            className="object-contain"
-          />
-        </div>
-      </Link>
+      <div  className="w-full mb-6 md:mb-12 lg:mb-24 ">
+              <Link href={`/philosophy`}>
+                <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
+                  <Image
+                    src="/05.jpg"
+                    alt="banner"
+                    fill
+                    className="object-contain z-0 hover:opacity-30"
+                  />
+                  <div
+                    className={`  hidden md:flex bg-sugar invisible group-hover:visible text-center text-black text-xl z-50  relative  bg-opacity-100 w-[30%] mx-auto my-auto  items-center justify-center h-12 rounded-xl  ${cy.className}`}
+                  >
+                    LEARN MORE
+                  </div>
+                </div>
+              </Link>
+            </div>
       <div className="w-full flex flex-row justify-between items-center mt-4 md:mt-8 lg:mt-16">
         <div className="bg-coral h-[0.125rem] rounded-r-2xl w-[15%] md:h-1 lg:h-2"></div>
         <div
@@ -48,11 +55,23 @@ async function AboutPage({}: Props) {
         </div>
         <div className="bg-coral h-[0.125rem] rounded-l-2xl w-[15%] md:h-1 lg:h-2 "></div>
       </div>
-      <Link href="/philosophy" className="w-full h-full relative">
-        <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative mt-8 md:mt-16 lg:mt-24 border-tiffany border-4 md:border-8 lg:border-16">
-          <Image src="/main.jpg" alt="banner" fill className="object-contain" />
-        </div>
-      </Link>
+      <div  className="w-full mb-6 md:mb-12 lg:mb-24 ">
+              <Link href={`/philosophy`}>
+                <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
+                  <Image
+                    src="/05.jpg"
+                    alt="banner"
+                    fill
+                    className="object-contain z-0 hover:opacity-30"
+                  />
+                  <div
+                    className={`  hidden md:flex bg-sugar invisible group-hover:visible text-center text-black text-xl z-50  relative  bg-opacity-100 w-[30%] mx-auto my-auto  items-center justify-center h-12 rounded-xl  ${cy.className}`}
+                  >
+                    LEARN MORE
+                  </div>
+                </div>
+              </Link>
+            </div>
       <div className="w-full flex flex-row justify-between items-center mt-4 md:mt-8 lg:mt-16">
         <div className="bg-coral h-[0.125rem] rounded-r-2xl w-[20%] md:h-1 lg:h-2"></div>
         <div

@@ -68,7 +68,7 @@ const Activities = ({ activities, gallery }: Props) => {
                   {activity.month}
                 </h1>
               </div>
-              ;{/* Activity Details */}
+              {/* Activity Details */}
               <div className="ml-2 w-[50%]">
                 <Link
                   href={`/activities/${activity.slug.current}`}
