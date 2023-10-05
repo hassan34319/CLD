@@ -21,7 +21,7 @@ function Partners({ partners }: Props) {
         </div>
         <div className="bg-coral h-[0.125rem] rounded-l-2xl w-[10%] md:h-1 lg:h-2 "></div>
       </div>
-      <p className="text-white text-xxss md:text-sm lg:text-base font-bold">
+      <p className="text-white text-xxss md:text-sm lg:text-base font-bold mt-6 md:mt-12 lg:mt-20 ">
          Top organizations served by our team of global trainers
         </p>
       {/* LOGOS */}
