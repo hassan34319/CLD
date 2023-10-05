@@ -19,9 +19,6 @@ function Explore({ socialPosts }: Props) {
         >
           EXPLORE
         </div>
-        <p className="text-white text-xxss md:text-sm lg:text-base font-bold">
-         Top organizations served by our team of global trainers
-        </p>
         <div className="bg-coral h-[0.125rem] rounded-l-2xl w-[30%] md:h-1 lg:h-2 "></div>
       </div>
       {/* POSTS */}
