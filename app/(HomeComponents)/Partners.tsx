@@ -21,11 +21,11 @@ function Partners({ partners }: Props) {
         </div>
         <div className="bg-coral h-[0.125rem] rounded-l-2xl w-[10%] md:h-1 lg:h-2 "></div>
       </div>
-      <p className="text-white text-xxss md:text-sm lg:text-base font-bold mt-6 md:mt-12 lg:mt-20 ">
-         Top organizations served by our team of global trainers
+      <p className="text-white text-xxss md:text-sm lg:text-base font-bold mt-3 md:mt-6 lg:mt-10 ">
+         Top organizations served by our team of global trainersgit 
         </p>
       {/* LOGOS */}
-      <div className="flex flex-wrap justify-center w-full mt-6 md:mt-12 lg:mt-20">
+      <div className="flex flex-wrap justify-center w-full mt-3 md:mt-6 lg:mt-10">
         {partners[0].image.map((image) => {
           return (
             <div className="w-[20%] h-16 md:h-32 relative lg:h-[14rem] border-gray-500 border-[1px]">
