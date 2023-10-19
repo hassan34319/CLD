@@ -35,7 +35,7 @@ function Footer({}: Props) {
             <Link href="">
               <Twitter />
             </Link>
-            <Link href="">
+            <Link href="https://www.linkedin.com/company/94851269/admin/feed/posts/">
               <Linkedin />
             </Link>
             <Link href="">
