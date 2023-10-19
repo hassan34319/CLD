@@ -45,7 +45,7 @@ async function SubTrainingPage({
           <>
             <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative mt-8 md:mt-16 lg:mt-24">
               <Image
-                src="/thr.png"
+                src="/global.jpeg"
                 alt="banner"
                 fill
                 className="object-contain"

@@ -22,7 +22,7 @@ export default function PhilPage({}: Props) {
 
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative">
         <Image
-          src="/phil11.jpg"
+          src="/philo12.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -30,7 +30,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative ">
         <Image
-          src="/phil12.jpg"
+          src="/philo13.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -38,7 +38,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative ">
         <Image
-          src="/phil13.jpg"
+          src="/philo14.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -46,7 +46,7 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative">
         <Image
-          src="/phil14.jpg"
+          src="/philo15.jpg"
           alt="banner"
           fill
           className="object-contain"
@@ -54,7 +54,15 @@ export default function PhilPage({}: Props) {
       </div>
       <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative ">
         <Image
-          src="/phil15.jpg"
+          src="/philo16.jpg"
+          alt="banner"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="w-full h-48 md:h-[24rem] lg:h-[40rem] relative ">
+        <Image
+          src="/philo17.jpg"
           alt="banner"
           fill
           className="object-contain"

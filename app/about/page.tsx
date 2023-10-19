@@ -59,7 +59,7 @@ async function AboutPage({}: Props) {
               <Link href={`/philosophy`}>
                 <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
                   <Image
-                    src="/phil9.jpg"
+                    src="/philo11.jpg"
                     alt="banner"
                     fill
                     className="object-contain z-0 hover:opacity-30"

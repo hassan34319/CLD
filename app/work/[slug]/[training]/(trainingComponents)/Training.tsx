@@ -148,7 +148,7 @@ function Training({ subTrainings, slug }: Props) {
             >
               {sol.name}
             </div>
-            <div className="bg-[#f5f5f5] h-[9rem] md:h-[14rem] lg:h-[22rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex flex-col items-center justify-center text-start px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
+            <div className="bg-[#f5f5f5] h-[9rem] text-justify md:h-[14rem] lg:h-[22rem] w-[100%] text-xxss md:text-xs lg:text-lg text-black font-medium flex flex-col items-center justify-center px-[3.33%] py-[1%] md:px-[6%] md:py-[2%] lg:px-[6%] lg:py-[4%]">
               {sol.description}
               <button
                 onClick={() => setSelectedBox(sol.name)}

@@ -36,6 +36,11 @@ async function WorkPage({}: Props) {
         {works.map((work: Work) => {
           return (
             <div key={work._id} className="w-full mb-6 md:mb-12 lg:mb-24 ">
+              <div
+                className={`${cy.className} text-coral text-sm  md:text-2xl lg:text-3xl mt-4 md:mt-8 lg:mt-16 flex justify-center`}
+              >
+                {work.title}
+              </div>
               <Link href={`/work/${work.slug.current}`}>
                 <div className="w-[80%] group  z-30 mx-auto h-[10rem] md:h-[20rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
                   <Image

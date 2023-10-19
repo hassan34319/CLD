@@ -86,7 +86,7 @@ const Activities = ({ activities, gallery }: Props) => {
                   </span>
                 </p>
               </div>
-              ;{/* Activity image */}
+              {/* Activity image */}
               <div className="w-[37%] h-16 md:h-48 relative ml-8  text-start">
                 <Image
                   className="object-contain"

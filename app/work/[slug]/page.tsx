@@ -14,12 +14,17 @@ async function TrainingPage({ params }: { params: { slug: string } }) {
   console.log(slug);
   const query = `*[_type == "work" && slug.current == "${slug}"]`;
   const work: Work[] = await client.fetch(query);
-  console.log(work)
+  console.log(work);
   return (
     <main className="w-full h-max bg-black text-white">
       <Header />
       <div className="min-h-[70vh]">
         <div key={work[0]._id} className="w-full mb-6 md:mb-12 lg:mb-24 ">
+          <div
+            className={`${cy.className} text-coral text-sm  md:text-2xl lg:text-3xl mt-4 md:mt-8 lg:mt-16 flex justify-center`}
+          >
+            {work[0].title}
+          </div>
           <div className="w-[100%] group  z-30 mx-auto h-48 md:h-[24rem] lg:h-[40rem] relative mt-4 md:mt-8 lg:mt-12 flex items-center justify-center">
             <Image
               src={urlFor(work[0].image).url()}
@@ -28,7 +33,7 @@ async function TrainingPage({ params }: { params: { slug: string } }) {
               className="object-contain"
             />
           </div>
-          <p className="text-xxs md:text-base lg:text-xl text-white font-medium w-[95%] mx-auto mt-2 md:mt-4 lg:mt-8">
+          <p className="text-xxs md:text-base lg:text-xl text-white text-justify font-medium w-[95%] mx-auto mt-2 md:mt-4 lg:mt-8">
             {work[0].learningSolutionText}
           </p>
           <div className="w-[90%] flex-wrap flex justify-between mx-auto mt-4 md:mt-8 lg:mt-16">
